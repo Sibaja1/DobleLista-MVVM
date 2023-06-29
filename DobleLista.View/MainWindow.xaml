@@ -1,0 +1,58 @@
+﻿<Window x:Class="DobleLista.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:DobleLista.ViewModel;assembly=DobleLista.ViewModel"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local="clr-namespace:DobleLista.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <vm:MainViewModel x:Key="MainViewModel"></vm:MainViewModel>
+    </Window.Resources>
+
+    <Grid DataContext="{Binding Source={StaticResource MainViewModel}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <DataGrid Grid.Column="0" ItemsSource="{Binding ListaLeft}" SelectedItem="{Binding SeleccionarPersona}" x:Name="dgLeft" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="*" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Traceability" Width="4*" Binding="{Binding Traceability}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+        <DataGrid Grid.Column="2" ItemsSource="{Binding ListaRigth}" SelectedItem="{Binding SeleccionarPersona}" x:Name="dgRigth" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="*" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Traceability" Width="4*" Binding="{Binding Traceability}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+        <Grid Grid.Column="1" Grid.Row="0" Background="Azure">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Button x:Name="BRigth" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"  Background="Aquamarine" Content="&gt;" Command="{Binding ClickCommandRigth}"/>
+                <Button x:Name="BRigthAll" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Background="Aquamarine" Content="&gt;&gt;" Command="{Binding ClickCommandRigthAll}"/>
+                <Button x:Name="BLeft" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Background="Aquamarine" Content="&lt;" Command="{Binding ClickCommandLeft}"/>
+                <Button x:Name="BLeftAll" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Background="Aquamarine" Content="&lt;&lt;" Command="{Binding ClickCommandLeftAll}"/>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+
+</Window>

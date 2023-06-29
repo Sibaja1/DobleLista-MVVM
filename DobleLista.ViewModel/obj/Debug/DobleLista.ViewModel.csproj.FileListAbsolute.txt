@@ -1,0 +1,9 @@
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\bin\Debug\DobleLista.ViewModel.dll
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\bin\Debug\DobleLista.ViewModel.pdb
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\bin\Debug\DobleLista.Model.dll
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\bin\Debug\DobleLista.Model.pdb
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\obj\Debug\DobleLista.ViewModel.csproj.AssemblyReference.cache
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\obj\Debug\DobleLista.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\obj\Debug\DobleLista.ViewModel.csproj.CopyComplete
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\obj\Debug\DobleLista.ViewModel.dll
+C:\Users\aguil\OneDrive\Escritorio\Tarea\DobleLista.ViewModel\obj\Debug\DobleLista.ViewModel.pdb
